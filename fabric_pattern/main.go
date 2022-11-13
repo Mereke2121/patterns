@@ -1,10 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	hui := getHui()
-	fmt.Println(hui)
 	ak47, _ := getGun("ak47")
 	musket, _ := getGun("musket")
 
@@ -17,8 +17,4 @@ func printDetails(g IGun) {
 	fmt.Println()
 	fmt.Printf("Power: %d", g.getPower())
 	fmt.Println()
-}
-
-func getHui() string {
-	return "Hui"
 }
